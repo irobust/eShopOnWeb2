@@ -24,6 +24,7 @@ jobs:
       - name: Build and Push Image
         run: |
           cd src/Web
+          ls -l
           docker build . -t ${{ env.ACR_LOGIN_SERVER }}/${{ env.TAG_NAME }}
           docker push ${{ env.ACR_LOGIN_SERVER }}/${{ env.TAG_NAME }}
         
