@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: eshoponweb-phanupong
   name: webapp
   labels:
     app: sample-app
